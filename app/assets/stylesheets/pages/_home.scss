@@ -2,3 +2,25 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+.card{
+  font-size: 36px;
+  a{
+    padding-left: 20px;
+    color: $gold;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+.margin-top{
+  margin: 50px;
+}
+
+hr{
+  margin: 20px 0;
+  border: 1px solid $brand-color;
+}

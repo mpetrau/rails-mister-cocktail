@@ -1,13 +1,14 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png" %>
+    <%= image_tag "http://www.luxury-drinks.pt/wp-content/uploads/2015/01/logo-b.png" %>
   <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Search form -->
+    <div class="navbar-wagon-link">About</div>
     <form action="" class="navbar-wagon-search">
       <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
       <button type="submit" class="navbar-wagon-search-btn">
@@ -19,7 +20,7 @@
     <!-- render 'layouts/navbar_login' -->
 
     <!-- Button (call-to-action) -->
-    <%= link_to t(".top_call_to_action", default: "New Restaurant"), new_restaurant_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
+    <%= link_to t(".top_call_to_action", default: "New Restaurant"), new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
