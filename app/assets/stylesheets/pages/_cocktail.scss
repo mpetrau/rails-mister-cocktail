@@ -1,0 +1,27 @@
+.banner{
+  height: 30vh;
+}
+
+dl {
+  margin-bottom: 0px;
+}
+
+.panel {
+  border-color: $light-pink;
+  dt {
+    color: $brand-color;
+  }
+  a {
+    color: $light-pink;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $red;
+  }
+}
+
+.form-control{
+  color: $black;
+  border-color: $light-pink;
+  width: 100%;
+}

@@ -11,6 +11,7 @@ class DosesController < ApplicationController
 
   def destroy
     @dose.destroy
+    redirect_to 'pages/cocktail'
   end
 
   private

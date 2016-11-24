@@ -1,0 +1,25 @@
+.btn-my {
+  color: $brand-color;
+  padding: 5px 15px;
+  font-weight: lighter;
+}
+.btn-my:hover {
+  border-color: $brand-color;
+  text-decoration: none;
+}
+.btn-treehouse {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #6AD58B;
+  transition: background 0.3s ease;
+}
+.btn-treehouse:hover {
+  opacity: 1;
+  background: #3ac162;
+  text-decoration: none;
+  color: white;
+}
+
+/* Build your own button classes ! */
