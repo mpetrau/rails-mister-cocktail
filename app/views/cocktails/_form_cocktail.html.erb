@@ -1,0 +1,4 @@
+<%= simple_form_for [@cocktail], html: { class: "input-group" } do |f| %>
+<%= f.input :name, placeholder: "name", label: false %>
+<span class="input-group-btn"><%= f.button :submit, "Add", class: "btn btn-default" %></span>
+<% end %>

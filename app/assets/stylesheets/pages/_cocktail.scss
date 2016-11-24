@@ -1,4 +1,4 @@
-.banner{
+ .sm .banner {
   height: 30vh;
 }
 
@@ -19,9 +19,16 @@ dl {
     color: $red;
   }
 }
+.form-inline{
+  display: flex;
+  justify-content: center;
+}
 
 .form-control{
   color: $black;
   border-color: $light-pink;
-  width: 100%;
+}
+
+.form-control:focus{
+  border-color: $brand-color;
 }

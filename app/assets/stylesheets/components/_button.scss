@@ -7,6 +7,17 @@
   border-color: $brand-color;
   text-decoration: none;
 }
+
+.btn-default {
+  background-color: $brand-color;
+  color: $light-pink;
+}
+
+.btn-default:hover {
+  background-color: $brand-color;
+  color: $gold;
+}
+
 .btn-treehouse {
   color: white;
   padding: 10px 15px;

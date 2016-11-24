@@ -1,7 +1,9 @@
 <%= simple_form_for [@cocktail, @dose], html: { class: "form-inline" } do |f| %>
+  <span class="ingredient-selector"><%= f.input :ingredient_id, collection: @ingredients, prompt: "ingredient", label: false%></span>
+  <span class="input-group">
   <%= f.input :description, placeholder: "description", label: false %>
-  <%= f.input :ingredient, collection: @ingredients, prompt: "ingredient", label: false %>
-  <%= f.button :submit, "Add", class: "btn-my" %>
+  <span class="input-group-btn"><%= f.button :submit, "Add" %></span>
+  </span>
 <% end %>
 
 
