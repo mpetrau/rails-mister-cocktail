@@ -7,11 +7,11 @@ class PhotoUploader < CarrierWave::Uploader::Base
   process convert: 'jpg'
 
   version :standard do
-    resize_to_fit 800, 600
+    cloudinary_transformation width: 800, height: 600, crop: :fill
   end
 
-  version :bright_face do
-    cloudinary_transformation effect: "brightness:30", radius: 20,
-      width: 150, height: 150, crop: :thumb, gravity: :face
+  version :thumb do
+    cloudinary_transformation effect: "brightness:30",
+      width: 150, height: 150, crop: :thumb
   end
 end

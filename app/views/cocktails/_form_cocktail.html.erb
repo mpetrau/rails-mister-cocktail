@@ -1,6 +1,10 @@
 <%= simple_form_for [@cocktail], html: { class: "input-group" } do |f| %>
-<%= f.input :photo %>
-<%= f.input :photo_cache, as: :hidden %>
+<div>
 <%= f.input :name, placeholder: "name", label: false %>
 <span class="input-group-btn"><%= f.button :submit, "Add", class: "btn btn-default" %></span>
+</div>
+<div>
+<%= f.input :photo %>
+<%= f.input :photo_cache, as: :hidden %>
+</div>
 <% end %>

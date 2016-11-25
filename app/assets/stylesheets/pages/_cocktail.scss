@@ -1,4 +1,4 @@
- .sm .banner {
+.sm .banner {
   height: 30vh;
 }
 
@@ -8,6 +8,8 @@ dl {
 
 .panel {
   border-color: $light-pink;
+  width: 100%;
+  margin-left: 0;
   dt {
     color: $brand-color;
   }
@@ -31,4 +33,9 @@ dl {
 
 .form-control:focus{
   border-color: $brand-color;
+}
+
+.img-responsive{
+  padding: 5px;
+  border: 1px solid $gold;
 }
