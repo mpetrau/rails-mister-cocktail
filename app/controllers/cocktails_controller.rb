@@ -15,6 +15,7 @@ class CocktailsController < ApplicationController
     if @cocktail.save
       redirect_to @cocktail
     else
+      @cocktails = Cocktail.all
       render 'cocktails/index'
     end
   end

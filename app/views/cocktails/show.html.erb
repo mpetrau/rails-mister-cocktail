@@ -11,6 +11,7 @@
   <div class="row margin-top">
     <div class="col-md-6 col-md-offset-3">
       <% @cocktail.doses.each do |dose|%>
+      <% if dose.persisted? %>
       <div class="panel panel-default">
         <div class="panel-body">
         <dl class="dl-horizontal">
@@ -19,6 +20,7 @@
         </dl>
         </div>
       </div>
+      <% end %>
      <% end %>
     </div>
   </div>
