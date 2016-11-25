@@ -6,9 +6,9 @@
   <% @cocktails.each do |cocktail|  %>
   <div class="row margin-top">
     <div class="card col-md-8 col-md-offset-2 underlined">
-      <%= link_to "", cocktail_path(cocktail), class: "class-link" %>
       <span><%= image_tag cocktail.photo.url(:thumb) %></span>
       <span><%= link_to cocktail.name, cocktail_path(cocktail) %></span>
+      <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
     </div>
   </div>
   <% end %>
