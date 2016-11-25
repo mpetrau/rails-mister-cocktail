@@ -10,15 +10,12 @@ class CocktailsController < ApplicationController
     @dose = Dose.new
   end
 
-  def new
-  end
-
   def create
     @cocktail = Cocktail.new(cocktail_params)
     if @cocktail.save
       redirect_to @cocktail
     else
-      render :index
+      render 'cocktails/index'
     end
   end
 
