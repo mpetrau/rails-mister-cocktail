@@ -2,20 +2,24 @@
   height: 30vh;
 }
 
-dl {
-  margin-bottom: 0px;
-}
-
 .panel {
   border-color: $light-pink;
   width: 100%;
-  margin-left: 0;
+  margin-left: 20px;
+  dl {
+    margin-bottom: 0px;
+    width:inherit;
+  }
   dt {
     color: $brand-color;
+    width: 150px;
+  }
+  dd{
+    margin-left: 170px;
+    width:inherit;
   }
   a {
     color: $light-pink;
-    text-decoration: none;
   }
   a:hover{
     color: $red;
